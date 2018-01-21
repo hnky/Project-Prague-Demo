@@ -34,14 +34,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Gestures">
-      <HintPath>..\..\..\..\Users\Henk Boelman\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\Microsoft.Gestures.dll</HintPath>
+    <Reference Include="Microsoft.Gestures.Common.Core">
+      <HintPath>..\..\..\Users\Ordina\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\SDK\.netcore\Microsoft.Gestures.Common.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Gestures.Endpoint">
-      <HintPath>..\..\..\..\Users\Henk Boelman\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\SDK\Microsoft.Gestures.Endpoint.dll</HintPath>
+    <Reference Include="Microsoft.Gestures.Core">
+      <HintPath>..\..\..\Users\Ordina\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\SDK\.netcore\Microsoft.Gestures.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Gestures.Protocol">
-      <HintPath>..\..\..\..\Users\Henk Boelman\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\Microsoft.Gestures.Protocol.dll</HintPath>
+    <Reference Include="Microsoft.Gestures.Protocol.Core">
+      <HintPath>..\..\..\Users\Ordina\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\SDK\.netcore\Microsoft.Gestures.Protocol.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Gestures.Proxy.Core">
+      <HintPath>..\..\..\Users\Ordina\AppData\Roaming\Microsoft\Prague\PragueVersions\LatestVersion\SDK\.netcore\Microsoft.Gestures.Proxy.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

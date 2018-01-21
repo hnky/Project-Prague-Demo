@@ -1,6 +1,6 @@
 ﻿using System.Windows;
-using Microsoft.Gestures;
 using Microsoft.Gestures.Endpoint;
+using Microsoft.Gestures;
 
 namespace GreetDemo
 {
@@ -17,7 +17,6 @@ namespace GreetDemo
 
         private async void RunProgram()
         {
-
             var fist = new HandPose("Fist", new FingerPose(new AllFingersContext(), FingerFlexion.Folded));
 
             var peace = new HandPose("Peace", 
@@ -29,12 +28,12 @@ namespace GreetDemo
             var gesturesService = GesturesServiceEndpointFactory.Create();
             await gesturesService.ConnectAsync();
             await gesturesService.RegisterGesture(makePeace);
-
+/*
             makePeace.Triggered += (sender, args) =>
             {
-                Dispatcher.Invoke(() => GreetingText.Text = "Hello!!!");
+                Dispatcher.Invoke(() => GreetingText.Text = "Hello MixUG");
             };
-
+            */
             fist.Triggered += (sender, args) =>
             {
                 Dispatcher.Invoke(() => GreetingText.Text = ".");
@@ -44,7 +43,7 @@ namespace GreetDemo
             {
                 Dispatcher.Invoke(() => GreetingText.Text = "..");
             };
-            
+
         }
     }
 }
